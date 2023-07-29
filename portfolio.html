@@ -5,41 +5,45 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>Web Studio-Portfolio</title>
  <link rel="stylesheet" href="css/styles.css"/>
+ <link href="
+https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css
+" rel="stylesheet">
  <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
 
- <header>
-  <nav>
-   <a href="/" target="_blank" rel="noreferrer noopener" class="logo"><span class="logo-web-font">web</span><span class="logo-studio-font">studio</span></a>
-   <menu>
+ <header class="header-border">
+  <div class="container-header">
+   <nav class="nav-header">
+    <a href="/" target="_blank" rel="noreferrer noopener" class="logo"><span class="logo-web-font">web</span><span class="logo-studio-font">studio</span></a>
+    <menu class="menu-header">
+     <li>
+      <a href="./index.html" rel="noreferrer noopener" class="nav-menu">Studio</a>
+     </li>
+     <li>
+      <a href="./portfolio.html" rel="noreferrer noopener" class="nav-menu">Portfolio</a>
+     </li>
+     <li>
+      <a href="/contacts" target="_blank" rel="noreferrer noopener" class="nav-menu">Contacts</a>
+     </li>
+    </menu>    
+   </nav>
+   <ul class="contacts-header">
     <li>
-     <a href="./index.html" rel="noreferrer noopener" class="nav-menu">Studio</a>
+     <a class="text-contacts" href="mailto:info@devstudio.com" target="_blank" rel="noreferrer noopener">info@devstudio.com</a>
     </li>
     <li>
-     <a href="./portfolio.html" rel="noreferrer noopener" class="nav-menu">Portfolio</a>
+     <a class="text-contacts" href="tel:+110001111111" target="_blank" rel="noreferrer noopener">+11 (000) 111-11-11</a>
     </li>
-    <li>
-     <a href="/contacts" target="_blank" rel="noreferrer noopener" class="nav-menu">Contacts</a>
-    </li>
-   </menu>
-  </nav>
-  <ul>
-   <li>
-    <a class="text-contacts" href="mailto:info@devstudio.com" target="_blank" rel="noreferrer noopener">info@devstudio.com</a>
-   </li>
-   <li>
-    <a class="text-contacts" href="tel:+110001111111" target="_blank" rel="noreferrer noopener">+11 (000) 111-11-11</a>
-   </li>
-  </ul>
+   </ul>
+  </div>
  </header>
 
  <main>
   <section>
-   <h1></h1>
-   <ul>
+   <ul class="buttons-portfolio">
     <li>
      <button type="button" class="button-cloud">All</button>
     </li>
@@ -57,84 +61,83 @@
     </li>
    </ul>
   </section>
-  <section>
-   <ul>
-    <li>
+  <section class="container">
+   <ul class="cards-container">
+    <li class="card">
      <figure>
       <img src="images/hw-02/bankingapp.jpg" alt="Picture of banking app interface" width="360" height="300" />
-      <figcaption>
+      <figcaption class="card-description">
        <p class="text-h3">Banking App Interface Concept</p>
        <p class="text-body">App</p>
       </figcaption>
      </figure>
     </li>
-    <li>
+    <li class="card">
      <figure>
       <img src="images/hw-02/cashless.jpg" alt="Hand holding smartphone and paying cashless by it" width="360" height="300" />
-      <figcaption>
+      <figcaption class="card-description">
        <p class="text-h3">Cashless Payment</p>
        <p class="text-body">Marketing</p>
       </figcaption>
      </figure>
-    </li>
-    <li>
+    <li class="card">
      <figure>
       <img src="images/hw-02/redscreen.jpg" alt="Laptop and smartphone with the inscription[Return to 'normalcy']" width="360" height="300" />
-      <figcaption>
+      <figcaption class="card-description">
        <p class="text-h3">Meditation App</p>
        <p class="text-body">App</p>
       </figcaption>
      </figure>
     </li>
-    <li>
+    <li class="card">
      <figure>
       <img src="images/hw-02/taxidriver.jpg" alt="Driver in a car" width="360" height="300" />
-      <figcaption>
+      <figcaption class="card-description">
        <p class="text-h3">Taxi Service</p>
        <p class="text-body">Marketing</p>
       </figcaption>
      </figure>
     </li>
-    <li>
+    <li class="card">
      <figure>
       <img src="images/hw-02/moonlayout.jpg" alt="Smartphone with illustration of the night moon on screen" width="360" height="300" />
-      <figcaption>
+      <figcaption class="card-description">
        <p class="text-h3">Screen Illustrations</p>
        <p class="text-body">Design</p>
       </figcaption>
      </figure>
     </li>
-    <li>
+    <li class="card">
      <figure>
       <img src="images/hw-02/sunglassesgirl.jpg" alt="Smiling girl with sunglasses looking at her phone" width="360" height="300" />
-      <figcaption>
+      <figcaption class="card-description">
        <p class="text-h3">Online Courses</p>
        <p class="text-body">Marketing</p>
-      </figcaption>
-     </figure>
+      </figcaption> 
+     </figure>   
     </li>
-    <li>
+    <li class="card">
      <figure>
       <img src="images/hw-02/instagram.jpg" alt="Several different layouts of instagram post" width="360" height="300" />
-      <figcaption>
+      <figcaption class="card-description">
        <p class="text-h3">Instagram Stories Concept</p>
        <p class="text-body">Design</p>
-      </figcaption>
-     </figure>
+      </figcaption>   
+     </figure>  
     </li>
-    <li>
+    <li class="card">
      <figure>
       <img src="images/hw-02/womanwithgroceries.jpg" alt="Woman holding a bag with groceries" width="360" height="300" />
-      <figcaption>
+      <figcaption class="card-description">
        <p class="text-h3">Organic Food</p>
        <p class="text-body">Web Site</p>
-      </figcaption>
+      </figcaption>   
      </figure>
     </li>
-    <li>
+    <li class="card">
      <figure>
       <img src="images/hw-02/baristapouringmilk.jpg" alt="Barista pouring foamed milk into fancy coffee" width="360" height="300" />
-      <figcaption>
+      <figcaption class="card-description">
        <p class="text-h3">Fresh Coffee</p>
        <p class="text-body">Web Site</p> 
       </figcaption>
@@ -145,12 +148,10 @@
  </main>
 
  <footer class="footer-section">
-  <a href="/" target="_blank" rel="noreferrer noopener" class="logo"><span class="logo-web-font">web</span><span class="logo-studio-font-bright">studio</span></a>
-  <p class="footer-text">
-   Increase the flow of customers and 
-   sales for your business with digital 
-   marketing & growth solutions.
-  </p>
+  <div class="footer-container">
+   <a href="/" target="_blank" rel="noreferrer noopener" class="logo"><span class="logo-web-font">web</span><span class="logo-studio-font-bright">studio</span></a>
+   <p class="footer-text">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
+  </div>
  </footer>
 
 </body>

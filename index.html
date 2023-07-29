@@ -5,6 +5,9 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>Web Studio-Main Page</title>
  <link rel="stylesheet" href="css/styles.css"/>
+ <link href="
+https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css
+" rel="stylesheet">
  <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -13,75 +16,74 @@
 <body>
 
  <header>
-  <nav>
-   <a href="/" target="_blank" rel="noreferrer noopener" class="logo"><span class="logo-web-font">web</span><span class="logo-studio-font">studio</span></a>
-   <menu>
+  <div class="container-header">
+   <nav class="nav-header">
+    <a href="/" target="_blank" rel="noreferrer noopener" class="logo"><span class="logo-web-font">web</span><span class="logo-studio-font">studio</span></a>
+    <menu class="menu-header">
+     <li>
+      <a href="./index.html" rel="noreferrer noopener" class="nav-menu">Studio</a>
+     </li>
+     <li>
+      <a href="./portfolio.html" rel="noreferrer noopener" class="nav-menu">Portfolio</a>
+     </li>
+     <li>
+      <a href="/contacts" target="_blank" rel="noreferrer noopener" class="nav-menu">Contacts</a>
+     </li>
+    </menu>    
+   </nav>
+   <ul class="contacts-header">
     <li>
-     <a href="./index.html" rel="noreferrer noopener" class="nav-menu">Studio</a>
+     <a class="text-contacts" href="mailto:info@devstudio.com" target="_blank" rel="noreferrer noopener">info@devstudio.com</a>
     </li>
     <li>
-     <a href="./portfolio.html" rel="noreferrer noopener" class="nav-menu">Portfolio</a>
+     <a class="text-contacts" href="tel:+110001111111" target="_blank" rel="noreferrer noopener">+11 (000) 111-11-11</a>
     </li>
-    <li>
-     <a href="/contacts" target="_blank" rel="noreferrer noopener" class="nav-menu">Contacts</a>
-    </li>
-   </menu>
-  </nav>
-  <ul>
-   <li>
-    <a class="text-contacts" href="mailto:info@devstudio.com" target="_blank" rel="noreferrer noopener">info@devstudio.com</a>
-   </li>
-   <li>
-    <a class="text-contacts" href="tel:+110001111111" target="_blank" rel="noreferrer noopener">+11 (000) 111-11-11</a>
-   </li>
-  </ul>
+   </ul>
+  </div>
  </header>
 
  <main>
-  <section class="h1-section">
-   <h1 class="text-h1-first">
-    Effective Solutions
-    for Your Business
-   </h1>
+  <section class="h1-container">
+   <h1 class="text-h1-first"> Effective Solutions for Your Business </h1>
    <button type="button" class="button-blue">Order service</button>
   </section>
-  <section>
-   <dl>
-    <dt class="text-h3">Strategy</dt>
-    <dd>
-     <p class="text-body">
-      Our goal is to identify the business
+  <section class="container">
+   <dl class="description-list-company-values">
+    <div class="description-list-company-values-element">
+     <dt class="text-h3">Strategy</dt>
+     <dd>
+      <p class="text-body">Our goal is to identify the business
       problem to walk away with the 
-      perfect and creative solution.
-     </p>
-    </dd>
-    <dt class="text-h3">Punctuality</dt>
-    <dd>
-     <p class="text-body">
-      Bring the key message to the 
+      perfect and creative solution.</p>
+     </dd>
+    </div>
+    <div class="description-list-company-values-element">
+     <dt class="text-h3">Punctuality</dt>
+     <dd>
+      <p class="text-body">Bring the key message to the 
       brand's audience for the best price 
-      within the shortest possible time.
-     </p>
-    </dd> 
-    <dt class="text-h3">Diligence</dt>
-    <dd>
-     <p class="text-body">
-      Research and confirm brands that 
+      within the shortest possible time.</p>
+     </dd> 
+    </div>
+    <div class="description-list-company-values-element">
+     <dt class="text-h3">Diligence</dt>
+     <dd>
+      <p class="text-body">Research and confirm brands that 
       present the strongest digital growth 
-      opportunities and minimize risk.
-     </p>
-    </dd> 
-    <dt class="text-h3">Technologies</dt>
-    <dd>
-     <p class="text-body">
-      Design practice focused on digital 
+      opportunities and minimize risk.</p>
+     </dd> 
+    </div>
+    <div class="description-list-company-values-element">
+     <dt class="text-h3">Technologies</dt>
+     <dd>
+      <p class="text-body">Design practice focused on digital 
       experiences. We bring forth a deep 
-      passion for problem-solving.
-     </p>
-    </dd>
+      passion for problem-solving.</p>
+     </dd>
+    </div>
    </dl>
   </section>
-  <section>
+  <section class="container-our-work" >
    <h2 class="text-h2">What Are We Doing</h2>
    <ul>
     <li>
@@ -95,56 +97,56 @@
     </li>
    </ul>
   </section>
-  <section class="our-team-section">
-   <h2 class="text-h2">Our Team</h2>
-   <ul>
-    <li>
-     <figure>
-      <img src="images/hw-01/beardedman.jpg" alt="elegant smiling bearded brunette man" width="264" height="260" />
-      <figcaption>
-       <p class="text-h3-center">Mark Guerrero</p>
-       <p class="text-body-center">Product Designer</p>
-      </figcaption>
-     </figure>
-    </li>
-    <li>
-     <figure>
-      <img src="images/hw-01/smiley.jpg" alt="happy elegant young man looking left" width="264" height="260" />
-      <figcaption>
-       <p class="text-h3-center">Tom Ford</p>
-       <p class="text-body-center">Frontend Developer</p>
-      </figcaption>
-     </figure>
-    </li>
-    <li>
-     <figure>
-      <img src="images/hw-01/pinkgirl.jpg" alt="smiling young girl with long brown hair wearing pink sweater" width="264" height="260" />
-      <figcaption>
-       <p class="text-h3-center">Camila Garcia</p>
-       <p class="text-body-center">Marketing</p>
-      </figcaption>
-     </figure>
-    </li>
-    <li>
-     <figure>
-      <img src="images/hw-01/beardedboy.jpg" alt="happy casually dressed young brunette bearded man" width="264" height="260" />
-      <figcaption>
-       <p class="text-h3-center">Daniel Wilson</p>
-       <p class="text-body-center">UI Designer</p>
-      </figcaption>
-     </figure>
-    </li>
-   </ul>
+  <section class="our-team-color">
+   <div class="container-our-team-section">
+    <h2 class="text-h2">Our Team</h2>
+    <ul class="our-team-cards">
+     <li>
+      <figure class="card">
+       <img src="images/hw-01/beardedman.jpg" alt="elegant smiling bearded brunette man" width="264" height="260" />
+       <figcaption class="card-design">
+        <p class="text-h3-center">Mark Guerrero</p>
+        <p class="text-body-center">Product Designer</p>
+       </figcaption>
+      </figure>
+     </li>
+     <li>
+      <figure class="card">
+       <img src="images/hw-01/smiley.jpg" alt="happy elegant young man looking left" width="264" height="260" />
+       <figcaption class="card-design">
+        <p class="text-h3-center">Tom Ford</p>
+        <p class="text-body-center">Frontend Developer</p>
+       </figcaption>
+      </figure>
+     </li>
+     <li>
+      <figure class="card">
+       <img src="images/hw-01/pinkgirl.jpg" alt="smiling young girl with long brown hair wearing pink sweater" width="264" height="260" />
+       <figcaption class="card-design">
+        <p class="text-h3-center">Camila Garcia</p>
+        <p class="text-body-center">Marketing</p>
+       </figcaption>
+      </figure>
+     </li>
+     <li>
+      <figure class="card">
+       <img src="images/hw-01/beardedboy.jpg" alt="happy casually dressed young brunette bearded man" width="264" height="260" />
+       <figcaption class="card-design">
+        <p class="text-h3-center">Daniel Wilson</p>
+        <p class="text-body-center">UI Designer</p>
+       </figcaption>
+      </figure>
+     </li>
+    </ul>
+   </div>
   </section>
  </main>
 
  <footer class="footer-section">
-  <a href="/" target="_blank" rel="noreferrer noopener" class="logo"><span class="logo-web-font">web</span><span class="logo-studio-font-bright">studio</span></a>
-  <p class="footer-text">
-   Increase the flow of customers and 
-   sales for your business with digital 
-   marketing & growth solutions.
-  </p>
+  <div class="footer-container">
+   <a href="/" target="_blank" rel="noreferrer noopener" class="logo"><span class="logo-web-font">web</span><span class="logo-studio-font-bright">studio</span></a>
+   <p class="footer-text">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
+  </div>
  </footer>
 
 </body>
